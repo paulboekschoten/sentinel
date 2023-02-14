@@ -1,0 +1,6 @@
+hour = 10
+
+main = rule {
+    hour >= 8 and
+    hour < 17
+}
