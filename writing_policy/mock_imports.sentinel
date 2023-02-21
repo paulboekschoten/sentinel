@@ -1,0 +1,6 @@
+import "foo"
+
+is_weekday = rule { foo.now.day not in ["saturday", "sunday"] }
+is_open_hours = rule { foo.now.hour > 8 and foo.now.hour < 17 }
+
+main = rule { is_open_hours and is_weekday }

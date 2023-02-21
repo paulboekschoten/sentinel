@@ -123,3 +123,33 @@ test {
   }
 }
 ```
+
+# Mocking
+https://docs.hashicorp.com/sentinel/writing/testing#mocking
+
+## Globals
+Removed the param definition from the sentinel file.  
+Changed the `param` to `global` in the hcl files.  
+
+Output is the same as for testing.  
+
+This simulates an environment where day and hour are already defined.
+
+## Imports
+
+Run:
+```
+sentinel apply mock_imports.sentinel
+```
+
+Output:
+```
+Pass - mock_imports.sentinel
+```
+
+To mock imports, we need to use the `mock` section of the configuration file. 
+In the file `sentinel.hcl` a reference is added to the `foo` module.  
+In the folder `testdata` a new file is created `mock-foo.sentinel`. 
+In this the `foo` module is given the definition for `day` and `hour`.
+There is now folder `mock_imports` anymore, as this is now taken over by the import of `foo`.  
+
