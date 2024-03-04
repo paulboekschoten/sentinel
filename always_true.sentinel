@@ -1,0 +1,3 @@
+main = rule {
+  version.new(tfplan.terraform_version).greater_than(tfversion)
+}
