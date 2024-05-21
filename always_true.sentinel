@@ -1,3 +1,8 @@
+import "tfplan"
+
+print("plan data")
+print(tfplan.data)
+
 main = rule {
   true
 }
