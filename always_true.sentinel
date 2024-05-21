@@ -1,5 +1,8 @@
 import "tfplan"
 
+print("plan resources")
+print(tfplan.resources)
+
 print("plan data")
 print(tfplan.data)
 
