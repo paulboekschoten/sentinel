@@ -1,14 +1,3 @@
-import "tfplan"
-import "tfplan/v2" as tfplantwo
-
-print("plan resources")
-print(tfplan.resources)
-
-print("plan data")
-print(tfplan.data)
-
-print("last used date for single: ", tfplantwo.planned_values.outputs.iam_role_static_single.value.role_last_used[0].last_used_date)
-
 main = rule {
   false
 }
