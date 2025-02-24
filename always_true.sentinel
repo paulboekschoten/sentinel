@@ -1,7 +1,7 @@
 import "tfplan"
 import "tfplan/v2" as tfplantwo
 
-tfplantwo.idontexist
+tfplan.idontexist
 
 main = rule {
   false
