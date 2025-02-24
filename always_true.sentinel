@@ -2,7 +2,7 @@ import "tfplan"
 import "tfplan/v2" as tfplantwo
 
 print("plan resources")
-print(tfplantwo.resources)
+print(tfplan.resources)
 
 main = rule {
   false
