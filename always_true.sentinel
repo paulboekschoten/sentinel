@@ -1,8 +1,7 @@
 import "tfplan"
 import "tfplan/v2" as tfplantwo
 
-print("plan resources")
-print(tfplan.resources)
+print(idontexist)
 
 main = rule {
   false
