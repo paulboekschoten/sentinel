@@ -1,6 +1,8 @@
 import "tfplan"
 import "tfplan/v2" as tfplantwo
 
+print("plan resources")
+
 main = rule {
   false
 }
